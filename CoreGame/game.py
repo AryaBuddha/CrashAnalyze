@@ -10,8 +10,6 @@ class CrashGame:
 
     Attributes
     ----------
-    last_hash : str
-        The last hash to generate game from.
     rtp_val : float
         The return to player value for the game.
     """
