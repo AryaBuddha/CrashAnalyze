@@ -2,7 +2,7 @@ import hashlib
 import hmac
 import requests
 
-from INITIAL import rtp_val
+rtp_val = 0.99
 
 class CrashGame:
     """
@@ -18,6 +18,7 @@ class CrashGame:
         self.hash_chain = []
         print("Generating hash chain...")
         self.generate_hash_chain()
+        print("Hash chain generated successfully!")
 
     def fetch_block_hash(self):
         """ Fetch the latest block hash from a Bitcoin blockchain API """
